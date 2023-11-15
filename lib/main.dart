@@ -1,4 +1,5 @@
-import 'package:circletechnolgy/screen/Home.dart';
+import 'package:circletechnolgy/Button/CircularButton.dart';
+import 'package:circletechnolgy/Dashboard/DashBoard.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +18,13 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Home(),
+      // home: const Home(),
+      //home: const UIBoxDesign(),
+      //home:  const FunWithContainer()
+       home: const DashBoard(),
+
+
+
     );
   }
 }
