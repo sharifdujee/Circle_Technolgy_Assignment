@@ -232,6 +232,7 @@ class SimpleOutlinedButton extends StatelessWidget {
   }
 }
 
+// Done
 class SimpleElevatedButtonWithIcon extends StatelessWidget {
   const SimpleElevatedButtonWithIcon(
       {required this.label,
@@ -258,6 +259,7 @@ class SimpleElevatedButtonWithIcon extends StatelessWidget {
   }
 }
 
+//Done
 class SimpleCircularIconButton extends StatelessWidget {
   const SimpleCircularIconButton(
       {this.fillColor = Colors.transparent,

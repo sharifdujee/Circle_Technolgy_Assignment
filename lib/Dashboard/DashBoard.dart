@@ -1,5 +1,11 @@
+import 'package:circletechnolgy/Button/ButtonApp.dart';
+import 'package:circletechnolgy/Button/ButtonType.dart';
 import 'package:circletechnolgy/Button/CircularButton.dart';
+import 'package:circletechnolgy/Button/Elevated.dart';
+import 'package:circletechnolgy/Button/ElevatedExample.dart';
+import 'package:circletechnolgy/Button/FloactinAction.dart';
 import 'package:circletechnolgy/Button/SimpleElevatedButton.dart';
+import 'package:circletechnolgy/Button/popup.dart';
 import 'package:circletechnolgy/UI-Design/BackgroundImage.dart';
 import 'package:circletechnolgy/UI-Design/Box.dart';
 import 'package:circletechnolgy/UI-Design/Fun_With_Container.dart';
@@ -24,7 +30,11 @@ class _DashBoardState extends State<DashBoard> {
     const SimpleEcommerce(),
     const SimpleButtons(),
     const CircularIconButton(iconData: Icons.circle),
-    SimpleElevatedButtonWithIcons(label:Text("Dhaka"), onPressed: () {}),
+    SimpleElevatedButtonWithIcons(label:Text(""), onPressed: () {}),
+    const  ButtonApps(),
+    const FloatingAction(),
+    const PopupButton()
+
 
   ];
   int _selectedWork = 0;
@@ -116,6 +126,30 @@ class _DashBoardState extends State<DashBoard> {
                 title: Text("Circular Icon button"),
                 onTap: () {
                   onChange(7);
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.account_circle),
+                title: Text("Elevated Button"),
+                onTap: () {
+                  onChange(8);
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.account_circle),
+                title: Text("Floating Action"),
+                onTap: () {
+                  onChange(9);
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.account_circle),
+                title: Text("PopUp Menu"),
+                onTap: () {
+                  onChange(10);
                   Navigator.pop(context);
                 },
               ),

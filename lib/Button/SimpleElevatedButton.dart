@@ -1,26 +1,38 @@
 import 'package:flutter/material.dart';
-class SimpleElevatedButtonWithIcons extends StatelessWidget {
-  const SimpleElevatedButtonWithIcons(
-      {required this.label,
-        this.color,
-        this.iconData,
-        required this.onPressed,
-        this.padding = const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
-        Key? key})
-      : super(key: key);
+
+class SimpleElevatedButtonWithIcons extends StatefulWidget {
+  const SimpleElevatedButtonWithIcons({
+    required this.label,
+    this.color,
+    this.iconData,
+    required this.onPressed,
+    this.padding = const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+    Key? key,
+  }) : super(key: key);
+
   final Widget label;
   final Color? color;
   final IconData? iconData;
-  final Function onPressed;
+  final void Function() onPressed;
   final EdgeInsetsGeometry padding;
 
   @override
+  _SimpleElevatedButtonWithIconsState createState() =>
+      _SimpleElevatedButtonWithIconsState();
+}
+
+class _SimpleElevatedButtonWithIconsState
+    extends State<SimpleElevatedButtonWithIcons> {
+  @override
   Widget build(BuildContext context) {
     return ElevatedButton.icon(
-      onPressed: onPressed as void Function()?,
-      icon: Icon(iconData),
-      label: label,
-      style: ElevatedButton.styleFrom(backgroundColor: color, padding: padding),
+      onPressed: widget.onPressed,
+      icon: Icon(widget.iconData),
+      label: SizedBox.shrink(),
+      style: ElevatedButton.styleFrom(
+        backgroundColor: widget.color,
+        padding: widget.padding,
+      ),
     );
   }
 }
