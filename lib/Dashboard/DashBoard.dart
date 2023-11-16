@@ -4,6 +4,7 @@ import 'package:circletechnolgy/Button/CircularButton.dart';
 import 'package:circletechnolgy/Button/Elevated.dart';
 import 'package:circletechnolgy/Button/ElevatedExample.dart';
 import 'package:circletechnolgy/Button/FloactinAction.dart';
+import 'package:circletechnolgy/Button/Rounded.dart';
 import 'package:circletechnolgy/Button/SimpleElevatedButton.dart';
 import 'package:circletechnolgy/Button/popup.dart';
 import 'package:circletechnolgy/UI-Design/BackgroundImage.dart';
@@ -11,8 +12,10 @@ import 'package:circletechnolgy/UI-Design/Box.dart';
 import 'package:circletechnolgy/UI-Design/Fun_With_Container.dart';
 import 'package:circletechnolgy/UI-Design/button.dart';
 import 'package:circletechnolgy/UI-Design/ecommerce.dart';
+import 'package:circletechnolgy/Widget/Checkbox.dart';
 import 'package:circletechnolgy/screen/Home.dart';
 import 'package:flutter/material.dart';
+import 'package:roundcheckbox/roundcheckbox.dart';
 
 class DashBoard extends StatefulWidget {
   const DashBoard({super.key});
@@ -33,7 +36,9 @@ class _DashBoardState extends State<DashBoard> {
     SimpleElevatedButtonWithIcons(label:Text(""), onPressed: () {}),
     const  ButtonApps(),
     const FloatingAction(),
-    const PopupButton()
+    const PopupButton(),
+    const CheckBoxExample(),
+
 
 
   ];
@@ -150,6 +155,14 @@ class _DashBoardState extends State<DashBoard> {
                 title: Text("PopUp Menu"),
                 onTap: () {
                   onChange(10);
+                  Navigator.pop(context);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.account_circle),
+                title: Text("CheckBox"),
+                onTap: () {
+                  onChange(11);
                   Navigator.pop(context);
                 },
               ),
