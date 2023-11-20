@@ -24,7 +24,7 @@ class _PopupButtonState extends State<PopupButton> {
           itemBuilder: (BuildContext context) => <PopupMenuEntry<SampleItem>>[
             const PopupMenuItem(
               value: SampleItem.item1,
-                child: Text('Item 1'),
+              child: Text('Item 1'),
             ),
             const PopupMenuItem(
               value: SampleItem.item1,

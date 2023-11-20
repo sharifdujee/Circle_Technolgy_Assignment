@@ -133,7 +133,7 @@ class _CheckBoxExampleState extends State<CheckBoxExample> {
                   });
                 }),
             CheckboxListTile(
-              controlAffinity: ListTileControlAffinity.leading,
+                controlAffinity: ListTileControlAffinity.leading,
                 secondary: const Icon(Icons.alarm),
                 title: const Text("4 P.M"),
                 subtitle: const Text("5 P.M"),

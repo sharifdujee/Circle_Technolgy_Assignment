@@ -29,24 +29,24 @@ class _ButtonTypeGroupsState extends State<ButtonTypeGroups> {
           ),
           FilledButton(
             style: const ButtonStyle(
-              backgroundColor: MaterialStatePropertyAll(Colors.greenAccent)
+                backgroundColor: MaterialStatePropertyAll(Colors.greenAccent)
             ),
             onPressed: onPressed,
-              child: const Text("Filled"),
+            child: const Text("Filled"),
           ),
           FilledButton.tonal(
             style: TextButton.styleFrom(
               foregroundColor: Colors.red,
             ),
             onPressed: onPressed,
-              child: const Text("Filled Button"),
+            child: const Text("Filled Button"),
           ),
           OutlinedButton(
             style:const ButtonStyle(
               backgroundColor: MaterialStatePropertyAll(Colors.orange),
             ),
             onPressed: onPressed,
-              child: const Text("OutLine"),
+            child: const Text("OutLine"),
           ),
           TextButton(
             style: const ButtonStyle(
@@ -61,7 +61,7 @@ class _ButtonTypeGroupsState extends State<ButtonTypeGroups> {
           TextButtonTheme(data: TextButtonThemeData(
             style: TextButton.styleFrom(foregroundColor: Colors.green),
           ),
-              child: Text("TextButtonTheme"),
+            child: Text("TextButtonTheme"),
           ),
 
 

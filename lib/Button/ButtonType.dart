@@ -1,4 +1,4 @@
-import 'package:circletechnolgy/Button/ElevatedExample.dart';
+import 'package:car/button/ElevatedExample.dart';
 import 'package:flutter/material.dart';
 
 class ButtonTypeExamples extends StatefulWidget {
@@ -12,7 +12,7 @@ class _ButtonTypeExamplesState extends State<ButtonTypeExamples> {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-        padding: EdgeInsets.all(10),
+      padding: EdgeInsets.all(10),
       child: Row(
         children: <Widget> [
           Spacer(),
